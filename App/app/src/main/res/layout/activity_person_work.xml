@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Phần chọn ngày -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn ngày" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Phần chọn ca làm việc -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn ca làm việc" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonMorning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca sáng (8:00 - 12:00)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAfternoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca chiều (13:00 - 17:00)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEvening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca tối (18:00 - 22:00)" />
+
+    </RadioGroup>
+
+    <!-- Nút đăng ký và hủy -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

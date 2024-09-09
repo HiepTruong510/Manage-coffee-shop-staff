@@ -1,0 +1,185 @@
+#### --------------------------Login and Register -------
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "truong1",
+    "password": "truong" 
+}
+
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "truong",
+    "password": "truong"
+}
+ 
+### ------------------- Post -------------------------------
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer .eyJ1c2VySWQiOiI2NDYyZDUzMzRmOTIyNGIwNzk2ZWRjMDMiLCJpYXQiOjE2ODY0NjA0MjJ9.cbTcH7biYlO4EpqIGfXRCfZE55oFDVJMh09V5qCpd2I
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
+{
+    "title": "sinh nhat 11/6 nè 5",
+    "decription": "haizz",
+    "url": "youtube.com",
+    "gio": "2023-06-11",
+    "status": "To Learn"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyZDUzMzRmOTIyNGIwNzk2ZWRjMDMiLCJpYXQiOjE2ODY0NjA0MjJ9.cbTcH7biYlO4EpqIGfXRCfZE55oFDVJMh09V5qCpd2I
+
+###
+
+PUT http://localhost:5000/api/posts/646e1d3eaef7c81bcb25e9b7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzMzI1ODk4YTExMTkzN2Y2ZTNhNGYiLCJpYXQiOjE2ODQ5MzgwMDZ9.Aea7iA1jBqyt-_5EexFs-kikmiwRcj_xUycoNDjzccg
+
+{
+    "title": "vaicutluon",
+    "decription": "111111122222",
+    "url": "vue.com",
+    "status": "Learning"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/64517ab8631f9070cb9d29ba
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDg4MTRjZmM1ODZhNmY5MWRjMGVmZDEiLCJpYXQiOjE2ODY2NDUyOTN9.CLgW1HCLUn-TK70GkduwzotrYB3KstkjdTc7Qoa7O3o
+
+
+### -------------------- Info ------------------------
+GET http://localhost:5000/api/infos/list
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDczNThmZjM0YmE4MjY3OGU1OTI2ZWUiLCJpYXQiOjE2ODY1NDQxNjF9.Gu65SEIyBmfS_aVT3a3dt7PHQ9ENk1OUalrj03JLIGQ
+
+###
+GET http://localhost:5000/api/infos/person
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDczNThmZjM0YmE4MjY3OGU1OTI2ZWUiLCJpYXQiOjE2ODY1NDQxNjF9.Gu65SEIyBmfS_aVT3a3dt7PHQ9ENk1OUalrj03JLIGQ
+
+###
+POST http://localhost:5000/api/infos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDg4MTRjZmM1ODZhNmY5MWRjMGVmZDEiLCJpYXQiOjE2ODY2NDUyOTN9.CLgW1HCLUn-TK70GkduwzotrYB3KstkjdTc7Qoa7O3o
+
+{
+    "fullname": "Đoàn Đỗ Lâm Trường", 
+    "phonenumber":"0633225588", 
+    "email":"truong@gmail.com",
+    "birthyear": "2002",
+    "more": "",
+    "address": "ktx khu b"
+    
+}
+
+###
+PUT http://localhost:5000/api/infos/6486bc78864f9ef917f6e0f6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDczNThmZjM0YmE4MjY3OGU1OTI2ZWUiLCJpYXQiOjE2ODY1NDQxNjF9.Gu65SEIyBmfS_aVT3a3dt7PHQ9ENk1OUalrj03JLIGQ
+
+{
+    "fullname": "Phạm Văn Ngọ", 
+    "phonenumber":"02233665588", 
+    "email":"ngo@gmail.comm",
+    "birthyear": "2002",
+    "address": "ktx khu a",
+    "more": "xấu trai"
+}
+
+###
+
+DELETE  http://localhost:5000/api/infos/64b002cf8f4ab398c5b25bdf
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDg4MTRjZmM1ODZhNmY5MWRjMGVmZDEiLCJpYXQiOjE2ODY2NDUyOTN9.CLgW1HCLUn-TK70GkduwzotrYB3KstkjdTc7Qoa7O3o
+
+
+### -------------------- Work ------------------------
+
+POST http://localhost:5000/api/works
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzMzI1ODk4YTExMTkzN2Y2ZTNhNGYiLCJpYXQiOjE2ODUwMDk5NzN9.iYq-MZi7-kAIbbefbDjygSA49FDoQElA6zA6Cjb5HPc
+
+{
+    "ngay_dang_ky": "26/05/2023",
+    "ca_dang_ky": 3
+}
+
+
+###
+
+PUT http://localhost:5000/api/works/64867201ae6114078636dceb
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzMzI1ODk4YTExMTkzN2Y2ZTNhNGYiLCJpYXQiOjE2ODY1Nzg2ODF9.lTmw-HROtuCRI00R3wK1R6ovIO63VTm1nw1AxHkZtJg
+
+{
+    "tinh_trang": "choduyet"
+}
+
+###
+POST http://localhost:5000/api/works
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDg4MTRjZmM1ODZhNmY5MWRjMGVmZDEiLCJpYXQiOjE2ODY2NDAzMjh9.GLuwkWyykEOOeSf999riQt6erhCUyzW-XyFbp2pwoGE
+
+{
+    "ngay_dang_ky": "2023-07-01",
+    "ca_dang_ky": 1,
+    "tinh_trang": "choduyet"
+}
+### 
+
+POST http://localhost:5000/api/works/list2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzMzI1ODk4YTExMTkzN2Y2ZTNhNGYiLCJpYXQiOjE2ODY1NzI4OTN9.yGEtfRb5HdH_OSiGdi96f8jXJb-k5FjqlbG9hy2ah0s
+
+{
+    "ngay_dang_ky": "2023-06-11",
+    "ca_dang_ky": 2,
+    "tinh_trang": "choduyet"
+}
+###
+POST http://localhost:5000/api/works/person/check
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYyZDUzMzRmOTIyNGIwNzk2ZWRjMDMiLCJpYXQiOjE2ODU0MzY3NDB9.BSdPVgcT5c8VM6ujqpf9OmU6gUYCcVj6kSUUrGeBZtQ
+
+{
+    "ngay_dang_ky": "2023-06-11",
+    "ca_dang_ky": 2
+}
+
+###
+DELETE  http://localhost:5000/api/works/64b00c67f120802bc2a1ab3a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDg4MTRjZmM1ODZhNmY5MWRjMGVmZDEiLCJpYXQiOjE2ODkyNTk2NDZ9.H3wKY6MqWYoGi_VZUNv1xdL0r1dIPm8Ed_ZnTs7s3sg
+
+
+### -------------------- Adjust ------------------------
+PUT http://localhost:5000/api/adjusts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzMzI1ODk4YTExMTkzN2Y2ZTNhNGYiLCJpYXQiOjE2ODY1Nzg2ODF9.lTmw-HROtuCRI00R3wK1R6ovIO63VTm1nw1AxHkZtJg
+
+{
+    "ngay_dang_ky": "2023-06-15",
+    "ca_dang_ky": 1,
+    "he_so": 2.1
+}
+### -------------------- Salary ------------------------
+
+POST http://localhost:5000/api/salarys
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzMzI1ODk4YTExMTkzN2Y2ZTNhNGYiLCJpYXQiOjE2ODY1Nzg2ODF9.lTmw-HROtuCRI00R3wK1R6ovIO63VTm1nw1AxHkZtJg
+
+{
+    "tungay": "2023-06-10",
+    "denngay": "2023-06-16",
+    "iduser": "648814cfc586a6f91dc0efd1"
+}
+### -------------------- FUllNAME ------------------------
+POST http://localhost:5000/api/infos/fullname
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDYzMzI1ODk4YTExMTkzN2Y2ZTNhNGYiLCJpYXQiOjE2ODY1Nzg2ODF9.lTmw-HROtuCRI00R3wK1R6ovIO63VTm1nw1AxHkZtJg
+
+{
+   "iduser": "6462d5334f9224b0796edc03"
+}

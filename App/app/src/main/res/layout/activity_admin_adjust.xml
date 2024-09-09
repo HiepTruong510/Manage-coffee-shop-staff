@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    <!-- Date Time Picker -->
+    <TextView
+        android:id="@+id/datePickerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn ngày:" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="338dp"
+        android:calendarViewShown="false"
+        android:spinnersShown="true" />
+
+    <!-- Radio Group -->
+    <TextView
+        android:id="@+id/caLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn ca:" />
+
+    <RadioGroup
+        android:id="@+id/caRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonMorning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca sáng (8:00 - 12:00)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAfternoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca chiều (13:00 - 17:00)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEvening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca tối (18:00 - 22:00)" />
+
+
+    </RadioGroup>
+
+    <!-- Text View and Edit Text for Salary Coefficient -->
+
+    <TextView
+        android:id="@+id/employee_birth_year_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập hệ số lương:"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/hesoluong_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:inputType="text"/>
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/save_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật"
+        android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

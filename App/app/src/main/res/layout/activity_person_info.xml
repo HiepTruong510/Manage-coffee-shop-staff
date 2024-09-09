@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="0dp">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/material_deep_teal_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Thông Tin Bản Thân"
+        app:titleTextAppearance="@style/ToolbarTitleAppearance"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Employee name -->
+            <TextView
+                android:id="@+id/employee_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Họ tên"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:paddingTop="20dp"
+                android:paddingBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/employee_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập họ tên"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+
+            <!-- Employee phone -->
+            <TextView
+                android:id="@+id/employee_phone_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:paddingTop="40dp"
+                android:paddingBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/employee_phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập số điện thoại"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="phone"/>
+
+            <!-- Employee email -->
+            <TextView
+                android:id="@+id/employee_email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:paddingTop="40dp"
+                android:paddingBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/employee_email_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập email"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="textEmailAddress"/>
+
+            <!-- Employee birth year -->
+            <TextView
+                android:id="@+id/employee_birth_year_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Năm sinh"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:paddingTop="40dp"
+                android:paddingBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/employee_birth_year_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập năm sinh"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="number"/>
+
+            <!-- Employee address -->
+            <TextView
+                android:id="@+id/employee_address_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:paddingTop="40dp"
+                android:paddingBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/employee_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập địa chỉ"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+
+            <!-- More -->
+            <TextView
+                android:id="@+id/employee_more_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông tin khác"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:paddingTop="40dp"
+                android:paddingBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/employee_more_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:inputType="text"/>
+
+            <!-- Save and clear buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingTop="20dp">
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lưu"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

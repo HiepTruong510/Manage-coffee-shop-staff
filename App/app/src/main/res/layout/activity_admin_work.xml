@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/statusRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/pendingRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chờ duyệt" />
+
+        <RadioButton
+            android:id="@+id/approvedRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã duyệt" />
+
+    </RadioGroup>
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="374dp"
+        android:layout_height="276dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonMorning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca sáng (8:00 - 12:00)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAfternoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca chiều (13:00 - 17:00)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonEvening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ca tối (18:00 - 22:00)" />
+
+    </RadioGroup>
+
+    <!-- Danh sách nhân viên đăng ký ca -->
+    <TextView
+        android:id="@+id/name_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách nhân viên đăng ký ca"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
