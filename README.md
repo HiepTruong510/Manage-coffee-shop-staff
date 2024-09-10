@@ -5,15 +5,15 @@ This is an expense management application developed on VSCode. The application u
 
 **Features**  
 --user--  
-View personal information
-Edit personal information
-Sign up for work schedule
+View personal information  
+Edit personal information  
+Sign up for work schedule  
 --admin--  
-View staff list
-Remove employee from list
-Salary calculation
-Adjust salary coefficient
-Browse work schedule
+View staff list  
+Remove employee from list  
+Salary calculation  
+Adjust salary coefficient  
+Browse work schedule  
 
 **Setting**  
 Request:  
